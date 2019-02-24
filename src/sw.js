@@ -1,5 +1,5 @@
 // store static cache name in a variable for future app updates
-const staticCacheName = 'chadpjontek-portfolio-v1.1';
+const staticCacheName = 'chadpjontek-portfolio-v1.5';
 
 // install the service worker and cache the files
 self.addEventListener('install', e => {
@@ -24,10 +24,10 @@ self.addEventListener('activate', event => {
     caches.keys().then(cachesNames => {
       return Promise.all(
         cachesNames.filter(cacheName => {
-          return cacheName.startsWith('restaurant-') && cacheName != staticCacheName;
+          return cacheName.startsWith('chadpjontek-portfolio-') && cacheName != staticCacheName;
         }).map(cacheName => {
           // eslint-disable-next-line no-undef
-          return cache.delete(cacheName);
+          return caches.delete(cacheName);
         })
       );
     })
