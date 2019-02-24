@@ -50,7 +50,6 @@ const minify = {
   removeRedundantAttributes: true,
   removeScriptTypeAttributes: true,
   removeStyleLinkTypeAttributes: true,
-  sortAttributes: true,
   sortClassName: true,
   useShortDoctype: true
 };
@@ -105,6 +104,6 @@ module.exports = merge(common, {
       template: 'src/index.html',
       chunks: ['index'],
       minify
-    }),
+    })
   ]
 });
