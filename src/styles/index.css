@@ -391,7 +391,7 @@ footer {
 .social-media-icon {
   width: 48px;
   justify-self: center;
-  display: grid;
+
   align-self: center;
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0.2s;
