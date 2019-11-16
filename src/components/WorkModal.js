@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Spring } from 'react-spring';
+import easyListImg from '../images/easylist.jpg';
 import kittyCupidImg from '../images/kitty-cupid.png';
 import dietDayBookImg from '../images/DietDaybook.png';
 import restaurantReviewsImg from '../images/restaurant-reviews.png';
@@ -11,7 +12,6 @@ import pomodoroClockImg from '../images/PomodoroClock.png';
 import ticTacToeImg from '../images/TicTacToe.png';
 import speakAndMathImg from '../images/SpeakAndMath.png';
 import sweetheartsImg from '../images/sweethearts.jpg';
-import weatherImg from '../images/weather.png';
 import Project from './Project';
 
 // Get the button that opens the modal
@@ -36,7 +36,7 @@ export default class WorkModal extends Component {
     const firstTabStop = document.getElementById(this.props.id);
     const lastTabStop = document.getElementById(`${this.props.id}-close`);
     // Check to see if space or enter were pressed
-    if (e.keyCode === 32 &&  document.activeElement === lastTabStop|| e.keyCode === 13 && document.activeElement === lastTabStop) {
+    if (e.keyCode === 32 && document.activeElement === lastTabStop || e.keyCode === 13 && document.activeElement === lastTabStop) {
       // Prevent the default action to stop scrolling when space is pressed
       e.preventDefault();
       // Set focus back to the button that opened the modal
@@ -92,14 +92,13 @@ export default class WorkModal extends Component {
         </Spring>
         <div className='work-modal__content'>
           <Project
-            image={kittyCupidImg}
-            alt='A cute cartoon kitty blushing with a heart shaped arrow.'
-            name='Kitty Cupid'
-            description='Kitty Cupid is a memory matchmaking game. Your goal is to match each kitty with its love but your arrows are limited so choose wisely!'
+            image={easyListImg}
+            alt="A sticky note on a piece of ruled paper with the EasyList logo"
+            name="EasyList"
+            description="An extremely easy to use shareable list app and task manager. Make notes, lists, and tasks and share them with anyone!"
             links={{
-              app: 'https://kitty-cupid.netlify.com/',
-              github: 'https://github.com/chadpjontek/Kitty-Cupid',
-              fb: 'https://fb.me/KittyCupid'
+              app: 'https://www.easylist.link/',
+              github: 'https://github.com/chadpjontek/Easylist'
             }}
           />
           <Project
@@ -110,6 +109,17 @@ export default class WorkModal extends Component {
             links={{
               app: 'http://www.dietdaybook.com/',
               fb: 'https://fb.me/DietDaybook'
+            }}
+          />
+          <Project
+            image={kittyCupidImg}
+            alt='A cute cartoon kitty blushing with a heart shaped arrow.'
+            name='Kitty Cupid'
+            description='Kitty Cupid is a memory matchmaking game. Your goal is to match each kitty with its love but your arrows are limited so choose wisely!'
+            links={{
+              app: 'https://kitty-cupid.netlify.com/',
+              github: 'https://github.com/chadpjontek/Kitty-Cupid',
+              fb: 'https://fb.me/KittyCupid'
             }}
           />
           <Project
@@ -140,6 +150,16 @@ export default class WorkModal extends Component {
             links={{
               app: 'https://meteorite-landings.netlify.com/',
               github: 'https://github.com/chadpjontek/meteorite-data-map'
+            }}
+          />
+          <Project
+            image={sweetheartsImg}
+            alt="A screenshot of the sweethearts app. Candy hearts every where!"
+            name="Sweethearts for my sweetheart"
+            description="A Valentine's Day app to share with your sweetheart. Fully offline first so go ahead on that scenic trip you were planning... this app will still work when you're off the grid!"
+            links={{
+              app: 'https://sweethearts-for-my-sweetheart.netlify.com/',
+              github: 'https://github.com/chadpjontek/sweethearts-for-my-sweetheart'
             }}
           />
           <Project
@@ -190,26 +210,6 @@ export default class WorkModal extends Component {
             links={{
               app: 'https://math-and-speak-calculator.netlify.com/',
               github: 'https://github.com/chadpjontek/Math-and-Speak-Calculator'
-            }}
-          />
-          <Project
-            image={sweetheartsImg}
-            alt="A screenshot of the sweethearts app. Candy hearts every where!"
-            name="Sweethearts for my sweetheart"
-            description="A Valentine's Day app to share with your sweetheart. Fully offline first so go ahead on that scenic trip you were planning... this app will still work when you're off the grid!"
-            links={{
-              app: 'https://sweethearts-for-my-sweetheart.netlify.com/',
-              github: 'https://github.com/chadpjontek/sweethearts-for-my-sweetheart'
-            }}
-          />
-          <Project
-            image={weatherImg}
-            alt="A screenshot of app show the local forcast with Bitmoji/"
-            name="RiRis-Weather"
-            description="A customized weather app for a friend on her birthday using the Bitmoji and OpenWeather APIs."
-            links={{
-              app: 'https://riris-weather.netlify.com/',
-              github: 'https://github.com/chadpjontek/RiRis-Weather'
             }}
           />
           <div

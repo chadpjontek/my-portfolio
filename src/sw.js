@@ -1,5 +1,5 @@
 // store static cache name in a variable for future app updates
-const staticCacheName = 'chadpjontek-portfolio-v1.5';
+const staticCacheName = 'chadpjontek-portfolio-v1.6';
 
 // install the service worker and cache the files
 self.addEventListener('install', e => {
@@ -42,7 +42,6 @@ self.addEventListener('fetch', event => {
       if (response) {
         return response;
       }
-      const fetchRequest = event.request.clone();
       return fetch(event.request).then(response => {
         if (!response || response.status !== 200 || response.type !== 'basic') {
           return response;
