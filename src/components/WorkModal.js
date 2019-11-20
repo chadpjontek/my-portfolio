@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Spring } from 'react-spring';
 import easyListImg from '../images/easylist.jpg';
+import aftermathImg from '../images/aftermath.jpg';
 import kittyCupidImg from '../images/kitty-cupid.png';
 import dietDayBookImg from '../images/DietDaybook.png';
 import restaurantReviewsImg from '../images/restaurant-reviews.png';
@@ -8,7 +9,6 @@ import mazesMemesImg from '../images/mazes-and-memes.jpg';
 import meteoriteLandingsImg from '../images/meteorite-landings.png';
 import gameOfLifeImg from '../images/conwaysgameoflife.png';
 import simonBeatsImg from '../images/SimonBeats.png';
-import pomodoroClockImg from '../images/PomodoroClock.png';
 import ticTacToeImg from '../images/TicTacToe.png';
 import speakAndMathImg from '../images/SpeakAndMath.png';
 import sweetheartsImg from '../images/sweethearts.jpg';
@@ -102,6 +102,16 @@ export default class WorkModal extends Component {
             }}
           />
           <Project
+            image={aftermathImg}
+            alt="A screenshot of a DKP data table with wowhead tooltips."
+            name="Aftermath"
+            description="A web app for the Classic World of Warcraft horde guild, Aftermath, located on the East US PvP server Benediction."
+            links={{
+              app: 'https://aftermath.netlify.com/',
+              github: 'https://github.com/chadpjontek/aftermath'
+            }}
+          />
+          <Project
             image={dietDayBookImg}
             alt='An open daybook with handwriting that says,"Diet Daybook. A simple way to track your weight as well as count your calories, carbs and more!"'
             name='Diet Daybook'
@@ -180,16 +190,6 @@ export default class WorkModal extends Component {
             links={{
               app: 'https://simon-beats.netlify.com/',
               github: 'https://github.com/chadpjontek/simon-beats'
-            }}
-          />
-          <Project
-            image={pomodoroClockImg}
-            alt="A screenshot of a tomato timer."
-            name="Pomodoro Clock"
-            description='A customizable Pomodoro clock. Allows the setting of activity, break, and long break timers as well as the number of pomodoros needed before a long break begins.'
-            links={{
-              app: 'https://pomodoro-clock.netlify.com/',
-              github: 'https://github.com/chadpjontek/Pomodoro-Clock'
             }}
           />
           <Project
