@@ -41,7 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "lazysizes": "^4.1.8",
+    "lazysizes": "^5.2.1",
     "react": "^16.11.0",
     "react-aria-modal": "^3.1.0",
     "react-dom": "^16.11.0",
